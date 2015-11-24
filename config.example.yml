@@ -1,0 +1,16 @@
+---
+mailSender:
+  service: gmail # See available services list here : https://github.com/andris9/nodemailer-wellknown#supported-services
+  auth:
+    user: username@gmail.com # will be asked at runtime if left blank
+    pass: password # will be asked at runtime if left blank
+
+mail:
+  from: User <user@example.com>
+  subject: A Subject
+  html: false # Send body as HTML (defaults to false)
+  body: |
+    Mail body
+    {{key}} is replaced by the value of key
+    keys can contain alphanumeric and (_) characters
+    {{address}} is reserved (it resolves to destination address)
