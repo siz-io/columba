@@ -40,7 +40,7 @@ Locally installed : `npm start`
 
 - email address : enter addresses one at a time, enter empty address to stop.
 
-**`Mail config`** : mail config file path (drag&drop in terminal) cf [config sample](config.sample.yml)
+**`Mail config`** : mail config file path (drag&drop in terminal) cf [config example](config.example.yml)
 
 ## Update
 Globally installed : `sudo npm install -g columba`
