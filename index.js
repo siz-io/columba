@@ -100,6 +100,9 @@ loadMailConfig()
         mailConfig.mailSender.auth.pass = pass
         return mailConfig
       })
+    return mailConfig
+  })
+  .then(mailConfig => {
     mailConfig.mailSender.transporter = nodemailer.createTransport(mailConfig.mailSender)
     mailConfig.mail.compiledBody = handlebars.compile(mailConfig.mail.body)
     mailConfig.mail.compiledSubject = handlebars.compile(mailConfig.mail.subject)
@@ -109,5 +112,5 @@ loadMailConfig()
     .then(destinations => inputKeys(_.difference(findTemplateKeys(mailConfig.mail.subject + mailConfig.mail.body), Object.keys(destinations[0])))
       .then(missingKeys => destinations.forEach(destination => _.assign(destination, missingKeys)))
       .then(() => sendAllMail(mailConfig, destinations))
-      .then(() => console.log('done')).catch(err => console.log(err.stack)))
+      .then(() => console.log('Done.')).catch(err => console.log(err.stack)))
   )
