@@ -1,17 +1,17 @@
-# Pigeon
+# Columba
 ## Install
-Globally : `sudo npm install -g pigeon`
+Globally : `sudo npm install -g columba`
 
 Locally :
 
 ```
-git clone git@github.com:siz-io/pigeon.git
-cd pigeon
+git clone git@github.com:siz-io/columba.git
+cd columba
 npm install
 ```
 
 ## Use
-Globally installed : `pigeon`
+Globally installed : `columba`
 
 Locally installed : `npm start`
 
@@ -43,6 +43,6 @@ Locally installed : `npm start`
 **`Mail config`** : mail config file path (drag&drop in terminal) cf [config sample](config.sample.yml)
 
 ## Update
-Globally installed : `sudo npm install -g pigeon`
+Globally installed : `sudo npm install -g columba`
 
 Locally installed : `git pull`

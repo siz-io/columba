@@ -1,5 +1,5 @@
 {
-  "name": "pigeon",
+  "name": "columba",
   "version": "1.0.0",
   "description": "Template & send emails",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siz-io/pigeon.git"
+    "url": "git+https://github.com/siz-io/columba.git"
   },
   "keywords": [
     "template",
@@ -19,9 +19,9 @@
   "author": "guillaumervls",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/siz-io/pigeon/issues"
+    "url": "https://github.com/siz-io/columba/issues"
   },
-  "homepage": "https://github.com/siz-io/pigeon#readme",
+  "homepage": "https://github.com/siz-io/columba#readme",
   "dependencies": {
     "csvtojson": "^0.4.5",
     "eslint": "^1.10.1",
