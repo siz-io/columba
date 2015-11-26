@@ -46,3 +46,9 @@ Locally installed : `npm start`
 Globally installed : `sudo npm install -g columba`
 
 Locally installed : `git pull`
+
+## Test
+
+```
+npm test
+```
