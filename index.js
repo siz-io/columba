@@ -87,19 +87,23 @@ const sendAllMail = (mailConfig, destinations) => {
 loadMailConfig()
   .then(mailConfig => {
     mailConfig.mailSender.auth = mailConfig.mailSender.auth || {}
-    if (!mailConfig.mailSender.auth.user) return input(mailConfig.mailSender.service + ' user :')
-      .then(user => {
-        mailConfig.mailSender.auth.user = user
-        return mailConfig
-      })
+    if (!mailConfig.mailSender.auth.user) {
+      return input(mailConfig.mailSender.service + ' user :')
+        .then(user => {
+          mailConfig.mailSender.auth.user = user
+          return mailConfig
+        })
+    }
     return mailConfig
   })
   .then(mailConfig => {
-    if (!mailConfig.mailSender.auth.pass) return input(mailConfig.mailSender.service + ' pass :', true)
-      .then(pass => {
-        mailConfig.mailSender.auth.pass = pass
-        return mailConfig
-      })
+    if (!mailConfig.mailSender.auth.pass) {
+      return input(mailConfig.mailSender.service + ' pass :', true)
+        .then(pass => {
+          mailConfig.mailSender.auth.pass = pass
+          return mailConfig
+        })
+    }
     return mailConfig
   })
   .then(mailConfig => {
